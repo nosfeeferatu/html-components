@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+    
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background: #041561;        
+}
+
+img {
+    width: 100%;
+}
+
+.filling-bg {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+}
+
+.filling-bg img {
+    z-index: 1;
+}
+
+.filling-bg::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 150%;
+    rotate: 35deg;
+    box-shadow: 0 0 0 20px #084095;
+    transition: 0.5s;
+}
+
+.filling-bg:hover::before {
+    width: 0;
+    box-shadow: 0 0 0 250px #084095;
+    rotate: 144deg;
+}
