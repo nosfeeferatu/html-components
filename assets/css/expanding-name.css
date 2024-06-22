@@ -1,0 +1,36 @@
+h1 {
+    font-family: sans-serif;
+    font-size: 3rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+h1::before {
+    content: 'Mohammed ';
+    display: inline-block;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+    color: slategray;
+    text-align: right;
+}
+
+h1::after {
+    content: 'binMashood';
+    display: inline-block;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+    color: slategrey;
+}
+
+h1:hover::before {
+    width: 100%;
+}
+
+h1:hover::after {
+    width: 100%;
+}
