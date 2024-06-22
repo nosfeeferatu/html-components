@@ -13,7 +13,7 @@ h1::before {
     display: inline-block;
     width: 0%;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 1s ease-in;
     color: slategray;
     text-align: right;
 }
@@ -23,14 +23,14 @@ h1::after {
     display: inline-block;
     width: 0%;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 1s ease-in;
     color: slategrey;
 }
 
 h1:hover::before {
-    width: 100%;
+    width: 9em;
 }
 
 h1:hover::after {
-    width: 100%;
+    width: 10em;
 }
