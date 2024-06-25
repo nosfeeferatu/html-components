@@ -1,0 +1,42 @@
+:root {
+    --sky-blue1: #0B5F8E;
+    --sky-blue2: #337B8F;
+  }
+  
+  svg {
+    position: absolute;
+  }
+  
+  body {
+    background: linear-gradient(120deg, var(--sky-blue1), var(--sky-blue2));
+    height: 100dvh;
+    margin: 0;
+    position: relative;
+  }
+  
+  body::before {
+    position: absolute;
+    background-color: aliceblue;
+    opacity: 40%;
+    filter: url(#grainy);
+    content: '';
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+  }
+  
+  #hero {
+    display: grid;
+    place-content: center;
+    height: 100dvh;
+  }
+  
+  h1 {
+    color: #FCF011;
+    font-family: 'Plein', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 7rem;
+    letter-spacing: -0.3rem;
+    transform: scaleX(0.8);
+  }
