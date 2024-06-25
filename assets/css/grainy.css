@@ -39,4 +39,6 @@
     font-size: 7rem;
     letter-spacing: -0.3rem;
     transform: scaleX(0.8);
+    text-shadow: 0 0 5px #FCF011;
+    filter: blur(0.5px);
   }
